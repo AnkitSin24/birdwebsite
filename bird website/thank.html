@@ -1,0 +1,90 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:700' rel='stylesheet' type='text/css'>
+    <style>
+        @import url(//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css);
+        @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+        body {
+            background-color: rgb(162, 216, 12) !important;
+
+        }
+
+        #checkmark {
+            color: dodgerblue;
+
+        }
+
+
+
+        .site-header__title {
+            margin-top: 20px;
+        }
+
+        .site-header {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .site-header h1 {
+            font-size: 48px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/default_thank_you.css">
+    <script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/jquery-1.9.1.min.js"></script>
+    <script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/html5shiv.js"></script>
+</head>
+
+<body>
+    <header class="site-header" id="header">
+        <h1 class="site-header__title" data-lead-id="site-header-title">THANK YOU!</h1>
+
+    </header>
+
+    <!-- <header class="site-header">
+        <h1>Thank You!</h1>
+    </header> -->
+
+    <div class="main-content">
+        <i class="fa fa-check main-content__checkmark" id="checkmark"></i>
+        <p class="main-content__body" data-lead-id="main-content-body">
+            <img src="https://th.bing.com/th/id/R.548da99465716299039e9231250543d2?rik=KUyn%2fiwfOJjRDg&riu=http%3a%2f%2fimages.fineartamerica.com%2fimages-medium-large%2fbirds-and-flowers-thank-you-card-joyce-geleynse.jpg&ehk=F6ASxpgOcq6tiW4Hdyh52r3FfAbDFAz7ItRwM%2fbkxDo%3d&risl=&pid=ImgRaw&r=0"
+                height="450px"> Thanks a bunch for filling that out. It means a lot to us, just like you do! We really
+            appreciate you giving us a moment of your time today. Thanks for being you.
+        </p>
+    </div>
+
+    <footer class="site-footer" id="footer">
+        <p class="site-footer__fineprint" id="fineprint">Copyright ©2014 | All Rights Reserved</p>
+    </footer>
+</body>
+
+<script>
+    function scrollOnce() {
+        const windowHeight = window.innerHeight;
+        let scrollPosition = 0;
+
+        function scrollDown() {
+            if (scrollPosition < windowHeight) {
+                scrollPosition += 10;
+                window.scrollTo(0, scrollPosition);
+                setTimeout(scrollDown, 10);
+            }
+        }
+
+        scrollDown();
+    }
+
+
+</script>
+</html>
